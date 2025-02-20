@@ -3,9 +3,7 @@ class Solution {
         long answer = 0;
         long x = a < b ? a : b;
         long y = a > b ? a : b;
-        for (long i = x; i <= y; i++) {
-            answer += i;
-        }
+        answer = (y - x + 1) * (x + y) / 2;
         return answer;
     }
 }
